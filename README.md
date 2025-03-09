@@ -6,7 +6,7 @@
 Un'applicazione web interattiva che ti permette di esplorare i personaggi dell'universo di Rick and Morty, creata con React.
 
 ## 🖥️ Demo
-[Visualizza demo live](https://)
+[Visualizza demo live](https://the-rick-and-morty-hub.vercel.app/)
 
 ## 🚀 Caratteristiche
 - **Visualizzazione dei personaggi** in una griglia responsive
@@ -83,7 +83,7 @@ src/
 Progetto demo creato da [Henry](https://github.com/henry8913) per scopi didattici.
 
 ## 📝 Licenza
-Questo progetto è distribuito con licenza [MIT](https://). Consulta il file LICENSE per maggiori informazioni.
+Questo progetto è distribuito con licenza [MIT](https://github.com/henry8913/TheRickAndMortyHub/blob/main/LICENSE.txt). Consulta il file LICENSE per maggiori informazioni.
 
 ---
 
