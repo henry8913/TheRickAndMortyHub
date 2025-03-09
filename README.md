@@ -1,70 +1,89 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🌌 The Rick and Morty Hub
 
-## Available Scripts
+![Rick and Morty](./public/cover.gif)
 
-In the project directory, you can run:
+Un'applicazione web interattiva che ti permette di esplorare i personaggi dell'universo di Rick and Morty, creata con React.
 
-### `npm start`
+## 🖥️ Demo
+[Visualizza demo live](https://)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Caratteristiche
+- **Visualizzazione dei personaggi** in una griglia responsive
+- **Ricerca per nome** con aggiornamento in tempo reale
+- **Visualizzazione dettagliata** con informazioni su ogni personaggio:
+  - Status (vivo, morto, sconosciuto)
+  - Specie
+  - Origine
+  - Ultima posizione conosciuta
+  - Genere
+- **Navigazione paginata** tra tutti i personaggi dell'API
+- **Effetti visivi e animazioni** a tema Rick and Morty
+- **Design responsive** per dispositivi mobile e desktop
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tecnologie Utilizzate
+- **Frontend**: React.js 19.0.0
+- **UI**: CSS personalizzato e Bulma 1.0.3
+- **API**: [Rick and Morty API](https://rickandmortyapi.com/)
 
-### `npm test`
+## 💻 Installazione
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clona il repository e installa le dipendenze:
 
-### `npm run build`
+```bash
+git clone https://github.com/username/therickandmortyhub.git
+cd therickandmortyhub
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Utilizzo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Per avviare l'applicazione in modalità sviluppo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+L'applicazione sarà accessibile all'indirizzo [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Per creare una build di produzione:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔌 API
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Questa applicazione utilizza la [Rick and Morty API](https://rickandmortyapi.com/), una API RESTful gratuita che fornisce dati sui personaggi, episodi e luoghi dell'universo di Rick and Morty.
 
-## Learn More
+### Esempi di endpoint:
+- `GET /api/character` - Ottiene tutti i personaggi
+- `GET /api/character/{id}` - Ottiene un personaggio specifico per ID
+- `GET /api/character/?name=rick` - Cerca personaggi per nome
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Struttura del Progetto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+├── components/        # Componenti React
+│   ├── CharacterCard.js
+│   ├── CharacterList.js
+│   └── Header.js
+├── services/          # Servizi API
+│   └── api.js
+├── styles/            # Fogli di stile CSS
+│   ├── CharacterCard.css
+│   ├── CharacterList.css
+│   └── Header.css
+├── App.js             # Componente principale
+└── index.js           # Punto di ingresso
+```
 
-### Code Splitting
+## 👤 Autore
+Progetto demo creato da [Henry](https://github.com/henry8913) per scopi didattici.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 Licenza
+Questo progetto è distribuito con licenza [MIT](https://). Consulta il file LICENSE per maggiori informazioni.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
