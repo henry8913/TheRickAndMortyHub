@@ -1,27 +1,17 @@
+
 import React from 'react';
+import '../styles/Header.css';
 
 function Header() {
-    return (
-        <nav className="navbar" role="navigation" aria-label="main navigation">
-            <div className="navbar-brand">
-                <a className="navbar-item" href="/">
-                    <img src="https://rickandmortyapi.com/icons/icon-512x512.png" alt="Rick and Morty Logo" width="auto" />
-                </a>
-            </div>
-
-            <div className="navbar-menu">
-                <div className="navbar-start">
-                    <a className="navbar-item" href="/">
-                        Home
-                    </a>
-                    <a className="navbar-item" href="/about">
-                        About
-                    </a>
-                </div>
-            </div>
-        </nav>
-    );
+  return (
+    <div className="header">
+      <div className="portal-animation"></div>
+      <div className="header-content">
+        <h1 className="title">The Rick and Morty Hub</h1>
+        <h2 className="subtitle">Your portal to the multiverse!</h2>
+      </div>
+    </div>
+  );
 }
 
 export default Header;
-

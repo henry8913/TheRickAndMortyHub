@@ -1,0 +1,119 @@
+
+.header {
+  background-color: #97ce4c;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 8px solid #44281d;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+}
+
+.header .title {
+  color: #44281d;
+  font-family: 'Schwifty', 'Comic Sans MS', cursive;
+  font-size: 3.5rem;
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+  margin-bottom: 0.5rem;
+  animation: bounce 2s infinite;
+  letter-spacing: 1px;
+}
+
+.header .subtitle {
+  color: #44281d;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.portal-animation {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #3ae374 0%, #00a8ff 100%);
+  border-radius: 50%;
+  top: -75px;
+  right: 50px;
+  box-shadow: 0 0 20px #3ae374, 0 0 40px #00a8ff;
+  animation: spin 8s linear infinite;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@font-face {
+  font-family: 'Schwifty';
+  src: url('https://fonts.cdnfonts.com/css/get-schwifty') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Media queries per dispositivi mobile */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1.5rem 1rem;
+  }
+  
+  .header .title {
+    font-size: 2.5rem;
+  }
+  
+  .header .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .portal-animation {
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 1.2rem 0.8rem;
+    border-bottom-width: 6px;
+  }
+  
+  .header .title {
+    font-size: 2rem;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  }
+  
+  .header .subtitle {
+    font-size: 1rem;
+  }
+  
+  .portal-animation {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    right: 20px;
+  }
+}
